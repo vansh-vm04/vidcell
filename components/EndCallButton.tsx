@@ -8,7 +8,7 @@ const EndCallButton = () => {
   const router = useRouter();
   const {useLocalParticipant} = useCallStateHooks();
   const localParticipant = useLocalParticipant();
-  const isMeetingOwner = localParticipant && call?.state.createdBy.id === localParticipant.userId;
+  const isMeetingOwner = localParticipant && call?.state.createdBy?.id === localParticipant.userId;
 
   return (
     <div>

@@ -12,7 +12,7 @@ import ReactDatePicker from 'react-datepicker';
 
 const MeetingTypeList = () => {
   const [meetingState, setmeetingState] = useState<
-    isInstantMeeting | isJoiningMeeting | isScheduleMeeting | undefined
+    'isInstantMeeting' | 'isJoiningMeeting' | 'isScheduleMeeting' | undefined
   >(undefined);
   const router = useRouter();
   const user = useUser();
