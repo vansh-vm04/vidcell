@@ -1,8 +1,11 @@
-<<<<<<< HEAD
-# vidcell
-Video calling website made using nextjs and stream video api.
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vidcell
+
+Video calling website made using Nextjs and Stream Video SDK.
+
+- Visit live project - https://vidcell.vercel.app
+
+<br>
+
 
 ## Getting Started
 
