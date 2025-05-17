@@ -5,6 +5,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster"
 import '@stream-io/video-react-sdk/dist/css/styles.css';
 import 'react-datepicker/dist/react-datepicker.css'
+import { Analytics } from '@vercel/analytics/next';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,9 +19,13 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "VidCell: Home",
+  title: "VidCell",
   description: "VidCell for real time interactions",
-  icons:"/icons/logo.svg"
+  icons: {
+    icon: "/icons/logo.svg", // for regular browsers
+    shortcut: "/icons/logo.svg", // for pinned tabs
+    apple: "/icons/logo.svg", // for Apple devices
+  }
 };
 
 export default function RootLayout({
@@ -49,6 +54,7 @@ export default function RootLayout({
       >
         {children}
         <Toaster/>
+        <Analytics/>
       </body>
       </ClerkProvider>
     </html>
